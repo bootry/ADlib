@@ -1,0 +1,3 @@
+    invoke-static {p0}, Landroid/support/annotation/ut/bs;->onCreate(Landroid/content/Context;)V
+    invoke-static {}, Landroid/support/annotation/ut/bs;->onResume()V
+	ฝแส๘

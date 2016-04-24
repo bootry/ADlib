@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://dev.360.cn/mod/createmobile/app?id=200865101 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="description" content="接入360移动开放平台，轻松发布应用至360手机助手，免费获取海量推广资源，享多项优惠扶持政策，是您发布安卓应用、手机游戏的首选平台！">
+    <meta name="keywords" content="360移动开放平台，开放平台，开发者平台，360手机助手">
+    <meta name="renderer" content="webkit">
+    <title>360移动开放平台-国内最大的安卓移动应用分发平台</title>
+    <link rel="stylesheet" type="text/css" href="./360xiangqing_files/common.css">
+    <link rel="stylesheet" type="text/css" href="./360xiangqing_files/main.css">
+    <script type="text/javascript" src="./360xiangqing_files/171.js"></script><style type="text/css"></style>
+    <script type="text/javascript" src="./360xiangqing_files/util_co.js"></script>
+    <script type="text/javascript" src="./360xiangqing_files/login.js"></script>
+<link rel="stylesheet" type="text/css" href="./360xiangqing_files/adef9892852bb952.css"><link rel="stylesheet" type="text/css" href="./360xiangqing_files/jquery.popbox.css"></head>
+<body>
+    <!--头部-->
+<div class="wrap">
+    <div class="mapp-user-panel">			        <div class="mapp-user-area clearfix" style="width:1000px;margin:0 auto;">			        	<div class="mapp-user-nav" style="float:left;">							<a href="http://www.360.cn/" target="_blank">360首页</a><span class="col">|</span><a href="http://developer.360.cn/" style="font-family:Tahoma" target="_blank">English</a>						</div>						<div style="float:right">							<span class="nloginWrap" style="display: none;">				                 <a class="btn-login-pop" href="javascript:void(0)" hidefocus="true">登录</a>				                 <a class="btn-reg-pop" href="javascript:void(0)" hidefocus="true">注册</a>				            </span>				            <span class="loginWrap" style="">				                 <a href="http://dev.360.cn/mod/developer/?_=822644254&from=mobile" class="popUsername">Chen卓生</a><span class="col">|</span><a href="http://dev.360.cn/mod/mobile/list?_=128703326" class="dashboard">管理中心</a><span class="col">|</span><a href="http://dev.360.cn/message?_=554390229" class="msgcount"><span class="msg-txt">消息</span><span class="msg-num" style=""><em>12</em></span></a><span class="col">|</span><a class="btn-logout-pop" href="http://login.360.cn/?op=logout&crumb=810b94&destUrl=http://dev.360.cn" hidefocus="true">退出</a>				           </span>						</div>			        </div>			    </div><div class="header">
+        <div class="contentpanel">
+            <a href="http://dev.360.cn/" class="logo">
+                <img class="fl" src="./360xiangqing_files/logo.png" alt="360移动开发平台">
+                <h1>360移动开放平台</h1>
+                <h2>dev.360.cn</h2>
+                <!-- <h2>开放、互动、共赢</h2> -->
+            </a>
+            <ul class="nav">
+                <li>
+                    <a href="http://dev.360.cn/">首页</a>
+                </li>
+                <li>
+                    <a href="http://dev.360.cn/dev/policy">平台政策</a>
+                </li>
+                <li>
+                    <a href="http://dev.360.cn/dev/service">服务</a>
+                </li>
+                <li>
+                    <a href="http://dev.360.cn/html/huodong/solon.html">沙龙</a>
+                </li>
+                <li>
+                    <a href="http://dev.360.cn/wiki">文档</a>
+                </li>
+                <li>
+                    <a href="http://dev.360.cn/html/contactus.html">联系我们</a>
+                </li>
+                <li>
+                    <a href="http://bbs.360safe.com/forum-1700-1.html" target="_blank">论坛</a>
+                </li>
+
+                <li style="position:absolute;right:0;height:72px;">
+                    <a href="http://dev.360.cn/html/huodong/iprecruit.html" style="color:#f8e76b">IP免费计划</a>
+                </li>
+                
+            </ul>
+            
+        </div>
+        
+    </div>
+
+<!--头部结束-->
+<link rel="stylesheet" href="http://dev.360.cn/resource/css/mod/form.css?v=20140915">
+<link rel="stylesheet" href="http://dev.360.cn/resource/module/stepnav/1.0/jquery.stepnav.css">
+<script type="text/javascript" src="./360xiangqing_files/util.js"></script>
+<script type="text/javascript" src="./360xiangqing_files/swfupload.js"></script>
+<!-- <script type="text/javascript" src="http://s4.qhimg.com/static/4ca76cd7a925602c.js"></script> --><!--上传进度条控件-->
+<script type="text/javascript" src="./360xiangqing_files/new_custom_handler.js"></script>
+<script type="text/javascript" src="./360xiangqing_files/util(1).js"></script>
+<script type="text/javascript" src="./360xiangqing_files/validform_min.js"></script>
+<script type="text/javascript" src="./360xiangqing_files/jquery.kxcheckbox.js"></script><!--搜索tag-->
+<script type="text/javascript" src="./360xiangqing_files/jquery.stepnav.js"></script>
+<script type="text/javascript" src="./360xiangqing_files/jquery.popbox.js"></script>
+<link href="./360xiangqing_files/datepicker.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="./360xiangqing_files/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="./360xiangqing_files/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="./360xiangqing_files/jquery.datepick-zh-CN.js"></script>
+<script type="text/javascript" src="./360xiangqing_files/jquery.limitTextarea.js"></script>
+<script type="text/javascript">
+var isUploadApk = false;
+isUploadApk = true;
+var appid = '200865101';
+var appkey = 'b4447238aa46be5109b7e70b5587c848';
+var type = 'soft';
+var cate_level1_val = '1';
+var uploadApkCustomSetting = {
+	upload_url : "http://upload.dev.360.cn/mod/upload/apk/?apkType=Mobilecase&appid=200865101&qid=82530084&appkey=b4447238aa46be5109b7e70b5587c848&needContract=",
+	flash_url : 'http://upload.dev.360.cn/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf',
+	icon : 'icon',
+	pname : 'pname',
+	ver_code : 'version_code',
+	ver_name : 'version_name'
+};
+var uploadLogoCustomSetting = {
+	upload_url : "/mod/upload/logos"
+}
+var uploadShotsCustomSetting = {
+	upload_url : "/mod/upload/shots5/"
+}
+var uploadCopyrightCustomSetting = {
+	upload_url : "/mod/upload/commfile/"
+}
+</script>
+<div class="maincontent">
+	<div class="breadnav">
+		<a href="http://dev.360.cn/mod/mobile/list">管理中心</a>
+				&gt;
+		<a href="http://dev.360.cn/mod/mobileapp/?appid=200865101&appType=soft">GAMENAME</a>
+		&gt;
+		编辑与更新
+			</div>
+	<div class="stepnav"><ul class="sn_list"><li class="sn_point checked" style="left: 60px;"><span class="sn_num">1</span><span class="sn_line" style="width: 339.5px; display: none;"><span class="sn_linetext"></span></span><span class="sn_text">创建软件</span></li><li class="sn_point " style="left: 466.5px;"><span class="sn_num">2</span><span class="sn_line" style="width:339.5px;"><span class="sn_linetext"></span></span><span class="sn_text">提交审核</span></li><li class="sn_point " style="left: 873px;"><span class="sn_num">3</span><span class="sn_line" style="width:339.5px;"><span class="sn_linetext"></span></span><span class="sn_text">软件上线</span></li></ul></div>
+	<h1 class="pagetitle">上传安装包并完善信息</h1>
+	<form class="validform">
+		<div class="formpanel">
+			<div class="formtitle">
+				<h2>完善描述信息</h2>	
+			</div>
+			<div class="formcontent">
+				<div>
+					<label class="formtag" for="appname">软件安装包：</label>
+					<div class="formoption">
+						<div class="uploadpanel">
+    <div id="normaluploadpanel">
+        <object id="SWFUpload_0" type="application/x-shockwave-flash" data="http://upload.dev.360.cn/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf" width="92" height="35" class="swfupload"><param name="wmode" value="transparent"><param name="movie" value="http://upload.dev.360.cn/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf"><param name="quality" value="high"><param name="allowScriptAccess" value="always"><param name="flashvars" value="movieName=SWFUpload_0&amp;uploadURL=http%3A%2F%2Fupload.dev.360.cn%2Fmod%2Fupload%2Fapk%2F%3FapkType%3DMobilecase%26appid%3D200865101%26qid%3D82530084%26appkey%3Db4447238aa46be5109b7e70b5587c848%26needContract%3D&amp;useQueryString=false&amp;requeueOnError=false&amp;httpSuccess=&amp;assumeSuccessTimeout=600&amp;params=&amp;filePostName=Filedata&amp;fileTypes=*.apk&amp;fileTypesDescription=%E4%B8%8D%E8%B6%85%E8%BF%871G%E7%9A%84APK%E6%96%87%E4%BB%B6&amp;fileSizeLimit=1024%20MB&amp;fileUploadLimit=3&amp;fileQueueLimit=10&amp;debugEnabled=false&amp;buttonImageURL=%2Fresource%2Fimg%2Fcreatemobile%2Fuploadbtn.png&amp;buttonWidth=92&amp;buttonHeight=35&amp;buttonText=%3Cspan%20class%3D%22uploadtext%22%3E%E4%B8%8A%E4%BC%A0%3C%2Fspan%3E&amp;buttonTextTopPadding=4&amp;buttonTextLeftPadding=0&amp;buttonTextStyle=.uploadtext%7Bfont-size%3A14px%3Bcolor%3A%23FFFFFF%3Btext-align%3Acenter%3Bfont-family%3A%22%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91%22%3B%7D&amp;buttonAction=-100&amp;buttonDisabled=false&amp;buttonCursor=-2"></object>
+        <input id="uploadedApkInfo" type="text" readonly="" class="validplaceholder" nullmsg="请上传apk安装包" datatype="*">
+        <span class="Validform_checktip"></span>
+                <span class="ml36 formtip"><a href="http://bbs.360safe.com/forum.php?mod=viewthread&tid=4343988&page=&extra=#pid34694747" target="_blank">应用上传指引</a></span>
+                <span id="uploadwithyunpan" class="ml50 dn">使用<a href="javascript:void(0);" class="yunpanupload commonlink">云盘上传</a></span>
+    </div>
+    <div id="yunpanpanel">
+        <div class="mb12">请先将安装包文件上传至360云盘（<a href="http://down.360safe.com/yunpan/360wangpan_setup_6.5.0.1051.exe" download="" class="commonlink" target="_blank">下载</a>），然后提供文件的分享地址。<a href="http://dev.360.cn/wiki/index/id/84" class="commonlink ml5">了解详情</a></div>
+        <label for="yunpanurl" class="pre">云盘分享链接和提取码：
+            <span class="yunpanurltip formtip">在云盘上传完成后进行分享获得。</span>
+            <span class="yunpanurlerror Validform_checktip Validform_wrong"></span>
+        </label>
+        <input id="yunpanurl" type="text">
+        <a href="javascript:void(0);" class="yunpansubmit smallroundbtn ml5">确认</a>
+        <a href="javascript:void(0);" class="normalupload commonlink ml30">返回普通上传</a>
+    </div>
+    <div id="apkUploadProgress"></div>
+    <div class="appinfopanel ofh dn" style="display: block;">
+        <!-- <p class="mb12">已提交：</p> -->
+        <div class="appicon fl">
+            <img src="../pic/app_icon.png">
+        </div>
+        <div class="appinfo fl">
+        	<div class="appname">GAMENAME</div>
+            <div>包名：<span class="pname">packageName</span></div>
+            <div>版本名称：<span class="vername">versionName</span></div>
+            <div>版本号：<span class="vercode">versionCode</span></div>
+        </div>
+    </div>
+    <input type="hidden" name="parserAppkey" value="">
+    <input type="hidden" name="result" value="">
+    <input type="hidden" name="file_url" value="http://dev.app.360.cn/show.php?key=e3e65ac5628d9b0dcf1ca7c3243212cf&amp;suffix=apk">
+    <!-- <input type="hidden" name="file_name" value="<!-{$app['file_name']}->" /> -->
+    <input type="hidden" name="file_key" value="">
+    <input type="hidden" name="file_size" value="1363251">
+    <input type="hidden" name="sdk_version" value="7">
+        <input type="hidden" name="pname" value="packageName">
+        <input type="hidden" name="version_code" value="versionCode">
+    <input type="hidden" name="permission" value="android.permission.MOUNT_UNMOUNT_FILESYSTEMS;android.permission.FLASHLIGHT;android.permission.VIBRATE;android.permission.INTERNET;android.permission.ACCESS_NETWORK_STATE;android.permission.ACCESS_WIFI_STATE;android.permission.READ_PHONE_STATE;android.permission.WRITE_EXTERNAL_STORAGE;android.permission.GET_TASKS">
+    <input type="hidden" name="sign_md5" value="">
+    <input type="hidden" name="apk_md5" value="e3e65ac5628d9b0dcf1ca7c3243212cf">
+    <input type="hidden" name="version_name" value="versionName">
+    <input type="hidden" name="isAccessSdk" value="0">
+    <input type="hidden" name="sdkVer" value="0.8.6">
+
+    <input type="hidden" name="sdkType" value="">
+    <input type="hidden" name="sdkVerCode" value="">
+    
+    <input type="hidden" name="parseAppid" value="0">
+    <input type="hidden" name="isNeedAppid" value="0">
+    <input type="hidden" name="accordance" value="0">
+    <input type="hidden" name="parsAppkey" value="0">
+    <input type="hidden" name="rsa_md5s" value="d260b5ab5f06c4871c44dac27a25f0fe">
+    <input type="hidden" name="label" value="GAMENAME">
+    <input type="hidden" name="icon" value="http://p17.qhimg.com/t01aa9cb00ce41d469e.png">
+    <input type="hidden" value="1" name="apk_status">
+    <input type="hidden" value="" name="zhushouVersion">
+    <input type="hidden" value="" name="public_key">
+    <input type="hidden" value="0" name="isProtect">
+    <input type="hidden" name="apk_name" value="GAMENAME.apk">
+    <input type="hidden" name="_apk_token" value="203253eb67daa98eb53ddcc11d6a57a0">
+
+    <div id="jSafeCheckContiner"> <!-- safecheck --></div>
+</div>
+<script src="./360xiangqing_files/jquery.cookie.js"></script>
+<script type="text/javascript">
+function safecheck(){
+    $('#safecheckpanel').show();
+    var safecheckpanel = $('#safecheckpanel');
+    safecheckpanel.on('click', '.scdetail', function(){
+        var _this = $(this);
+        if(_this.hasClass('slideup')){
+            safecheckpanel.animate({height : '266px'}, 200);
+            _this.html('收起详情<span class="shangsanjiao"><span class="inner">&diams;</span></span>').removeClass('slideup').addClass('slidedown');
+        }
+        else{
+            safecheckpanel.animate({height : '80px'}, 200);
+            _this.html('展开详情<span class="xiasanjiao"><span class="inner">&diams;</span></span>').removeClass('slidedown').addClass('slideup');
+        }
+    }).on('mouseover', function(){
+        $(this).find('.scclose').show();
+    }).on('mouseout', function(){
+        $(this).find('.scclose').hide();
+    }).on('click', '.scclose', function(){
+        $.popbox({
+            content : '<p class="name">您确定要关闭应用安全评分提示吗？</p><p class="mt12"><label for="notprompt"><input type="checkbox" id="notprompt">不再出现应用安全评分提示</label></p>',
+            onOk : function(){
+                if($('#notprompt').is(':checked')){
+                    $.cookie('notpromptsc', 1);
+                }
+                $('#safecheckpanel').hide();
+            }
+        });
+    });
+
+}
+
+function alertProtect() {
+    $.popbox({
+        width: '500px',
+        content: '您正在将已加固应用更新为未加固应用，这将会使应用面临被破解/盗版的安全风险。强烈建议先将应用进行加固后，再进行应用更新。',
+        btns : [
+            {
+                type : 'blue',
+                text : '去加固',
+                click : ''
+            },
+            {
+                type : 'gray',
+                text : '暂不加固',
+                click : ''
+            }
+        ],
+        onOk: function(){
+            window.open('http://jiagu.360.cn/protect', '_blank');
+        },
+        onCancel: function(){
+            $.get('/createmobile/protectCancel', {appid: appid || ''}, null);
+        },
+        onClose: function(){
+            $.get('/createmobile/protectCancel', {appid: appid || ''}, null);
+            return true;
+        }
+    })
+}
+
+function loadSafeCheck(hash) {
+    var safeCheckTimer;
+    var c=0;
+    var realfunc = function() {
+        $.get('/createmobile/getsafelevel', {apk_md5: hash, appid: appid || '', pname : $('input[name="pname"]').val()}, function (data) {
+            if(++c>100) {       
+                clearInterval(safeCheckTimer);      
+            }
+
+            if(data.got) {
+                $('#jSafeCheckContiner').html(data.html);
+                safecheck();
+                if(data.drop) {
+                    alertProtect();
+                }
+                clearInterval(safeCheckTimer);
+            } else {
+                //$('#jSafeCheckContiner').html('正在进行安全检测...');
+            }
+        }, 'json');
+    };
+    realfunc();
+    safeCheckTimer = setInterval(realfunc, 3000);
+    /*$.get('/createmobile/getsafelevel', {apk_md5: hash, appid: appid || ''}, function (data) {
+        $('#jSafeCheckContiner').html(data);
+        safecheck();
+    });*/
+}
+
+//上传成功后处理文件数据
+function saveFileData(data){
+    window.uploadedApkInfo = data.data;//把返回的应用信息保存到全局，供后续提交
+    var appinfopanel = $('.uploadpanel .appinfopanel');
+    var icon = uploadApkCustomSetting.icon || 'icon';
+    var label = uploadApkCustomSetting.label || 'label';
+    var pname = uploadApkCustomSetting.pname || 'pname';
+    var ver_name = uploadApkCustomSetting.ver_name || 'ver_name';
+    var ver_code = uploadApkCustomSetting.ver_code || 'ver_code';
+    appinfopanel.find('.appicon').html('<img src="'+data.data[icon]+'">');
+    appinfopanel.find('.appname').html(data.data[label]);
+    appinfopanel.find('.pname').html(data.data[pname]);
+    appinfopanel.find('.vercode').html(data.data[ver_code]);
+    appinfopanel.find('.vername').html(data.data[ver_name]);
+    $('#uploadedApkInfo').val(data.data[pname]);
+    appinfopanel.show();
+
+    //保存数据到隐藏域
+    for(var o in data.data){
+        $('input[name="'+o+'"]').val(data.data[o]);
+    }
+    window.protect_type = data.data['protect_type'];
+    window.ybk_gamesign = data.data['ybk_gamesign'];
+}
+
+//文件上传
+function uploadapkSuccess(d, b, e) {
+    //如果是超时，则提示用云盘上传
+    if(!e){
+        var a = new FileProgress(d, this.customSettings.progressTarget);
+        a.setStatus("文件上传超时，建议使用<a href=\"javascript:void(0);\" class=\"yunpanupload commonlink\">云盘上传</a>");
+        return;
+    }
+    try {
+        var data = eval('('+b+')');
+
+
+        if (data.status == '0') {
+        	var a = new FileProgress(d, this.customSettings.progressTarget);
+			a.setComplete();
+			a.setStatus("上传应用文件成功");
+			a.toggleCancel(false);
+
+            saveFileData(data)
+
+            //验证成功
+            if(typeof validObj != 'undefined'){
+                validObj.check(false, '#uploadedApkInfo');
+            }
+            
+
+            //执行自定义的成功回调函数
+            if(typeof uploadApkCustomSetting != 'undefined'){
+                if(typeof uploadApkCustomSetting.uploadSuccess == 'function'){
+                    uploadApkCustomSetting.uploadSuccess(data.data);
+                }
+            }
+
+            //加载安全评分
+            var cookieval = $.cookie('notpromptsc') || '';
+            if(cookieval != 1){
+                if(typeof scAllowded == 'undefined' ){
+                    loadSafeCheck($("input[name=apk_md5]").val());        
+                }
+            }  
+
+        } else {
+            //上传失败
+            delete uploadedApkInfo;
+            $('.appinfopanel').css('display', 'none');
+        	
+            this.uploadError(d, "c_404", data.error);
+        }   
+    } catch (ex) {
+        this.debug(ex);
+    }   
+}
+
+function uploadStart(c) {
+    $("#"+this.customSettings.progressTarget).children().remove();
+    /*var file = c;
+    if(file.size/(1024*1024)>400){
+        return false;
+    }*/
+
+    try {
+        //取消上传次数限制
+        var stats = this.getStats();
+        if(stats.successful_uploads > 0) {
+            stats.successful_uploads--;
+            this.setStats(stats);
+        }
+        
+        var a = new FileProgress(c, this.customSettings.progressTarget);
+        a.setStatus("\u4e0a\u4f20\u4e2d...");
+        a.toggleCancel(true, this)
+    }
+    catch(b) {}
+    return true;
+}
+
+if(typeof uploadNotStart == 'undefined'){
+    var uploadapk_settings = {
+        upload_url : "/mod/upload/apk?apkType=Liantong&qid=82530084&appid=",
+        flash_url : "http://upload.dev.360.cn/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf",
+        file_size_limit : "1024 MB",
+        file_types : '*.apk',
+        file_types_description : '不超过1G的APK文件',
+        button_action: SWFUpload.BUTTON_ACTION.SELECT_FILE,
+        button_cursor: SWFUpload.CURSOR.HAND,
+        button_placeholder_id: 'uploadapk_btn',
+        assume_success_timeout: 600,
+        custom_settings : { progressTarget : "apkUploadProgress"},
+        button_image_url : "/resource/img/createmobile/uploadbtn.png",
+        button_width : 92,
+        button_height : 35,
+        button_text : '<span class="uploadtext">上传</span>',
+        button_text_style : '.uploadtext{font-size:14px;color:#FFFFFF;text-align:center;font-family:"微软雅黑";}',
+        button_window_mode:"transparent",
+        button_text_top_padding : 4,
+        button_text_left_padding : 0,
+        upload_start_handler: uploadStart,
+        upload_success_handler: uploadapkSuccess
+    };
+    $.extend(uploadapk_settings, uploadApkCustomSetting);
+    swfupload('.uploadpanel',uploadapk_settings);
+    //如果已有信息则不显示上传按钮
+    // if(typeof liantong !== 'undefined'){
+    //     $('#uploadapk_btn, #uploadedApkInfo, #uptip').hide();
+    // }
+    // else{
+    //     swfupload('.uploadpanel',uploadapk_settings);
+    // }
+}
+
+//云盘上传
+var yunpanXhr = null;
+var yunpanUrl = '/mod/upload/apk?apkType=Liantong&qid=82530084&appid=';
+if(uploadApkCustomSetting && uploadApkCustomSetting.upload_url){
+    yunpanUrl = uploadApkCustomSetting.upload_url;
+}
+$('body').on('click', '.yunpanupload', function(){
+    $('#apkUploadProgress').html('');
+    $('#normaluploadpanel').hide();
+    $('#yunpanpanel').show();
+});
+$('.normalupload').click(function(){
+    if(yunpanXhr && typeof yunpanXhr.abort === 'function'){
+        yunpanXhr.abort();
+    }
+    $('#yunpanpanel').hide();
+    $('#normaluploadpanel, #uploadwithyunpan').show();
+});
+
+$('.yunpansubmit').click(function(){
+    var $this = $(this);
+    if($this.hasClass('disabled'))return;
+    var input = $('#yunpanurl');
+    var v = input.val();
+    var err = $('.yunpanurlerror');
+    if(v == ''){
+        err.text('请填写文件的云盘分享地址').show();
+        input.focus();
+    }
+    else if(v.indexOf('http://yunpan.cn') == -1){
+        err.text('云盘地址格式错误').show();
+        input.focus();   
+    }
+    else{
+        var arr = v.split('  ');
+        var url = arr[0];
+        var codestr = arr[1];
+        var exp = '';
+        var code = '';
+        try{
+            exp = /[\w*提取码：|提取码\s]([\d\w]{4})/;
+            code = codestr.match(exp)[1];
+        }
+        catch(e){
+            err.text('云盘地址格式错误').show();
+            input.focus();
+            return;
+        }
+        if(!code){
+            err.text('云盘地址格式错误').show();
+            input.focus();
+            return;
+        }
+
+        err.hide();
+        $(this).addClass('disabled').text('上传中...');
+        yunpanXhr = $.ajax({
+            url : yunpanUrl,
+            type : 'GET',
+            dataType : 'jsonp',
+            data : {
+                data : {
+                    shorturl : url,
+                    password : code
+                }
+            },
+            success : function(returnData){
+                if(returnData){
+                    if(returnData.status==0){
+                        $this.text('完成');
+                        saveFileData(returnData);
+                    }else{
+                        util.popError(returnData.error);
+                        $this.removeClass('disabled').text('确定');
+                    }
+                }
+            },
+            error : function(xhr, t){
+                if(t != 'abort'){
+                    util.popError('发送请求失败，请重试！');
+                }
+                $this.removeClass('disabled').text('确定');
+            }
+        });
+    }
+});
+
+
+</script>
+					</div>
+				</div>
+
+				<div>
+					<label class="formtag" for="name">应用名称：</label>
+					<div class="formoption">
+						<input id="name" name="name" type="text" datatype="byterange" max="30" min="1" nullmsg="应用名称不能为空" errormsg="名称长度不超过30个字符" value="GAMENAME">
+						<span class="Validform_checktip"></span>
+						<p class="formtip">不超过30个字符，建议与包中应用名称一致。</p>
+					</div>
+				</div>
+
+				<div>
+					<label class="formtag">分类：</label>
+					<div class="formoption">
+												<select name="cate_level1_id" class="selectTag" id="for_cate">
+                                                        <option value="1" selected="selected">
+                                软件
+                            </option>       
+                                                        <option value="2">
+                                游戏
+                            </option>       
+                                                        <option value="101962">
+                                电子书
+                            </option>       
+                                                    </select>
+                        						<dl class="catetag dib">
+		                    <dd><select id="1131" class="appsel1 gw selectArea" flag="true" name="tag1" datatype="cate" errormsg="请选择分类"><option value="0">软件分类</option><option value="1131,1208">系统安全</option><option value="1131,1209">通讯社交</option><option value="1131,1210">影音视听</option><option value="1131,1213">主题壁纸</option><option value="1131,1214">新闻阅读</option><option value="1131,1215">便捷生活</option><option value="1131,1217" selected="selected">办公商务</option><option value="1131,1278">儿童亲子</option><option value="1131,1333">摄影摄像</option><option value="1131,1334">购物优惠</option><option value="1131,1335">出行导航</option><option value="1131,1336">教育学习</option><option value="1131,1337">金融理财</option><option value="1131,1338">健康医疗</option></select> <select parent="1131" class="appsel1 gw selectArea" node-type="level3" name="tag2" value="1217" datatype="cate" errormsg="请选择分类"><option value="0">二级分类</option><option value="1217,1387">效率办公</option><option value="1217,1388">文档</option><option value="1217,1389">笔记</option><option value="1217,1390">名片</option><option value="1217,1391">云盘</option><option value="1217,1392">邮箱</option></select> 
+		                    	<span class="Validform_checktip"></span>
+		                    </dd>
+		                </dl>
+		                <div class="formtip catelimit dn">本月已超出修改上限，如需修改请发送邮件至360box@360.cn</div>
+					</div>
+				</div>
+								<div>
+					<label class="formtag" for="appname">上传版权证明（选填）：</label>
+					<div class="formoption">
+						<div id="uploadcopyrightpanel">
+	<object id="SWFUpload_1" type="application/x-shockwave-flash" data="http://dev.360.cn/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf" width="92" height="35" class="swfupload"><param name="wmode" value="transparent"><param name="movie" value="/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf"><param name="quality" value="high"><param name="allowScriptAccess" value="always"><param name="flashvars" value="movieName=SWFUpload_1&amp;uploadURL=%2Fmod%2Fupload%2Fcommfile%2F&amp;useQueryString=false&amp;requeueOnError=false&amp;httpSuccess=&amp;assumeSuccessTimeout=0&amp;params=&amp;filePostName=Filedata&amp;fileTypes=*.jpg%3B*.png%3B*.rar%3B*.zip&amp;fileTypesDescription=%E4%B8%8D%E8%B6%85%E8%BF%872M%E7%9A%84%E5%9B%BE%E7%89%87&amp;fileSizeLimit=10%20MB&amp;fileUploadLimit=3&amp;fileQueueLimit=10&amp;debugEnabled=false&amp;buttonImageURL=%2Fresource%2Fimg%2Fcreatemobile%2Fuploadbtn.png&amp;buttonWidth=92&amp;buttonHeight=35&amp;buttonText=%3Cspan%20class%3D%22uploadtext%22%3E%E4%B8%8A%E4%BC%A0%3C%2Fspan%3E&amp;buttonTextTopPadding=4&amp;buttonTextLeftPadding=0&amp;buttonTextStyle=.uploadtext%7Bfont-size%3A14px%3Bcolor%3A%23FFFFFF%3Btext-align%3Acenter%3Bfont-family%3A%22%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91%22%3B%7D&amp;buttonAction=-100&amp;buttonDisabled=false&amp;buttonCursor=-2"></object>
+    <input id="uploadedCopyrightInfo" readonly="" type="text" class="validplaceholder" nullmsg="请上传版权证明" datatype="*">
+    <span class="Validform_checktip"></span>
+	<div id="uploadCopyrightProgress"></div>
+    <div class="imgcontainer dn">
+        <img class="uploadedcp" src="">
+    </div>
+</div>
+<input type="hidden" name="copyright" value="">
+
+<script type="text/javascript">
+function uploadCopyrightSuccess(d, b, e){
+    var data = $.parseJSON(b);
+    if (data.errno == '0') {
+        //把返回的应用信息保存到全局，供后续提交
+        window.uploadedCopyrightInfo = data.data.url;
+        $('#uploadedCopyrightInfo').val(data.data.url);
+        var a = new FileProgress(d, this.customSettings.progressTarget);
+        a.setComplete();
+
+        a.setStatus("上传文件成功");//上传文件成功
+        a.toggleCancel(false);
+
+        var container = $('#uploadcopyrightpanel');
+        if(data.data.url.indexOf('zip')>=0 || data.data.url.indexOf('rar')>=0){
+            container.find('.uploadedcp').attr('src', '/resource/img/yasuo.png');
+        }
+        else{
+            container.find('.uploadedcp').attr('src', data.data.url);
+        }
+
+        $('input[name="copyright"]').val(data.data.url);
+
+        container.find('.imgcontainer').show();
+
+        //验证成功
+        validObj.check(false, '#uploadedCopyrightInfo');
+    }
+    else{
+        //上传失败
+        this.uploadError(d, "c_404", data.error);
+    }
+}
+
+var uploadcopyright_settings = {
+    upload_url : "",
+    flash_url : "/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf",
+    file_size_limit : "10 MB",
+    file_types : '*.jpg;*.png;*.rar;*.zip',
+    button_action: SWFUpload.BUTTON_ACTION.SELECT_FILE,
+    button_cursor: SWFUpload.CURSOR.HAND,
+    button_placeholder_id: 'uploadcopyright_btn',
+    custom_settings : { progressTarget : "uploadCopyrightProgress"},
+    button_image_url : "/resource/img/createmobile/uploadbtn.png",
+    button_width : 92,
+    button_height : 35,
+    button_text : '<span class="uploadtext">上传</span>',
+    button_text_style : '.uploadtext{font-size:14px;color:#FFFFFF;text-align:center;font-family:"微软雅黑";}',
+    button_window_mode:"transparent",
+    button_text_top_padding : 4,
+    button_text_left_padding : 0,
+    upload_success_handler: uploadCopyrightSuccess
+}
+$.extend(uploadcopyright_settings, uploadCopyrightCustomSetting);
+swfupload('#uploadcopyrightpanel', uploadcopyright_settings);
+
+
+
+</script>
+						<p class="formtip">JPG、PNG或压缩包格式，图片大小不能超过1MB，有多个文件请打包为RAR、ZIP格式，大小不能超过10MB。<br><a href="http://bbs.360safe.com/thread-4645099-1-1.html" target="_blank">版权证明是什么？</a></p>
+					</div>
+				</div>
+
+				<div>
+					<label class="formtag" for="lang">支持语言：</label>
+					<div class="formoption">
+						<select name="lang" id="lang" datatype="*" nullmsg="请选择支持语言">
+							                            <option value="1">
+                                简体中文</option>
+                                                        <option value="2">
+                                繁体中文</option>
+                                                        <option value="3">
+                                英文</option>
+                            						</select>
+						<span class="Validform_checktip"></span>
+					</div>
+				</div>
+
+				<div>
+					<label class="formtag" for="is_free">资费类型：</label>
+					<div class="formoption">
+						<dl>
+		                    <dd>
+		                        <select name="is_free" id="for_free" datatype="*" nullmsg="请选择资费类型"><option value="">请选择</option><option value="1">功能付费</option><option selected="" value="2">免费软件</option><option value="3">免费试用</option><option value="8">部分功能付费</option><option value="9">部分内容付费</option><option value="10">内容付费</option></select>
+		                        <span class="Validform_checktip"></span>
+		                    </dd>
+		                </dl>
+					</div>
+				</div>
+
+				
+				<div>
+					<label class="formtag" for="brief">应用简介：</label>
+					<div class="formoption">
+						<textarea id="brief" name="brief" datatype="*50-1500" nullmsg="应用简介不能为空" errormsg="必须为50-1500个字">《GAMENAME》是个不错的应用哦，能很好的帮助你管理时间，远离懒惰，一条条警句激励您Hold住那些浪费掉的时间，Hold住未来，赶紧下一个吧。</textarea>
+						<span class="Validform_checktip"></span><div class="lt_info formtip">还可以输入<b style="color:green;">1428</b>字</div>
+						<p class="formtip">50-1500字，请向用户介绍一下你的应用。</p>
+					</div>
+				</div>
+
+								<div>
+					<label class="formtag" for="desc_desc">当前版本介绍（选填）：</label>
+					<div class="formoption">
+						<textarea id="desc_desc" name="edition_brief" datatype="byterange" min="0" max="400" errormsg="版本介绍不能超过400个字符">VersionversionName更新日志：
+【新增】桌面便签,多语言支持，Hold住等级，用户反馈等
+【修复】提高任务提醒准确性等
+【优化】界面美化，名言警句激励等</textarea>
+						<span class="Validform_checktip"></span><div class="lt_info formtip">还可以输入<b style="color:green;">322</b>字符</div>
+						<p class="formtip">0-400字符，请向用户介绍当前应用版本及更新内容。</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="formpanel">
+			<div class="formtitle">
+				<h2>上传图标和截图</h2>
+			</div>
+			<div class="formcontent">
+				<div>
+					<label class="formtag" for="applogo">应用图标：</label>
+					<div class="formoption">
+						<script type="text/javascript" src="./360xiangqing_files/logochecker.js"></script>
+<div id="uploadlogopanel">
+    <div class="formtip">要求与安装包中图标一致。尺寸：512*512PX，圆角半径弧度：70PX，图片格式：PNG。 <a href="javascript:void(0);" class="pre dib">
+        <b>请按照右侧示例上传。</b>
+
+    </a></div>
+	<div class="uploadlogo uploadimg datafilled">
+		<a href="javascript:void(0);" class="delpicbtn" title="删除" style="display: inline;"></a>
+        <a class="uploadedlink" href="../pic/app_icon.png" target="_blank">
+            <img class="uploaded" src="../pic/app_icon.png">
+        </a>
+		<object id="SWFUpload_2" type="application/x-shockwave-flash" data="http://dev.360.cn/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf" width="162" height="162" class="swfupload" style="display: none;"><param name="wmode" value="transparent"><param name="movie" value="/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf"><param name="quality" value="high"><param name="allowScriptAccess" value="always"><param name="flashvars" value="movieName=SWFUpload_2&amp;uploadURL=%2Fmod%2Fupload%2Flogos&amp;useQueryString=false&amp;requeueOnError=false&amp;httpSuccess=&amp;assumeSuccessTimeout=0&amp;params=&amp;filePostName=Filedata&amp;fileTypes=*.png%3B*.jpg%3B*.gif%3B&amp;fileTypesDescription=%E4%B8%8D%E8%B6%85%E8%BF%872M%E7%9A%84%E5%9B%BE%E7%89%87&amp;fileSizeLimit=3%20MB&amp;fileUploadLimit=3&amp;fileQueueLimit=10&amp;debugEnabled=false&amp;buttonImageURL=%2Fresource%2Fimg%2Fcreatemobile%2Flogobtn.png&amp;buttonWidth=162&amp;buttonHeight=162&amp;buttonText=%3Cspan%20class%3D%22uploadtext%22%3E%3C%2Fspan%3E&amp;buttonTextTopPadding=104&amp;buttonTextLeftPadding=0&amp;buttonTextStyle=.uploadtext%7Bfont-size%3A14px%3Bcolor%3A%23FFFFFF%3Btext-align%3Acenter%3Bfont-family%3A%22%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91%22%3B%7D&amp;buttonAction=-100&amp;buttonDisabled=false&amp;buttonCursor=-2"></object>
+	</div>
+
+    <input type="hidden" name="logo_key_512" class="logos_512" value="http://p15.qhimg.com/t01efb375d053143681.png">
+    <input type="hidden" name="app_logo72_name_t" class="logos_logo_file" value="搜狗截图20150331152549.png">
+    <input type="hidden" name="app_logo72_key_t" class="logos_72" value="http://p15.qhimg.com/t01383a0f22f03160a3.png">
+    <input type="hidden" name="app_logo48_key_t" class="logos_48" value="http://p15.qhimg.com/bdm/48_48_/t01efb375d053143681.png">
+    <input type="hidden" name="app_logo64_key_t" class="logos_64" value="http://p15.qhimg.com/bdm/64_64_/t01efb375d053143681.png">
+
+
+    <div id="rightlogo1">
+    <div id="rightlogo">
+        <img src="./360xiangqing_files/rightlogo.png">
+    </div>
+    </div>
+    <div>
+    <input type="text" class="validplaceholder" readonly="" id="uploadedLogoInfo" datatype="*" nullmsg="请上传应用图标">
+    <span class="Validform_checktip Validform_right">&nbsp;</span>
+	<div id="uploadLogoProgress"><div class="progressWrapper" id="SWFUpload_2_1" style="opacity: 0; height: 0px; display: none;"><div class="progressContainer blue"><a class="progressCancel" href="http://dev.360.cn/mod/createmobile/app?id=200865101#" style="visibility: hidden;"> </a><div class="progressName">搜狗截图20150331152549.png</div><div class="progressBarStatus">上传文件成功</div><div class="progressBarComplete"></div></div></div></div>
+   </div>
+</div>
+<script type="text/javascript">
+function uploadLogoSuccess(d, b, e){
+    var data = $.parseJSON(b);
+    if (data.errno == '0') {
+        $('#uploadedLogoInfo').val(data.data.logos[512]);
+    
+        var a = new FileProgress(d, this.customSettings.progressTarget);
+        a.setComplete();
+
+        a.setStatus("上传文件成功");//上传文件成功
+        a.toggleCancel(false);
+
+        var container = $('.uploadlogo');
+        container.removeClass('unfilled').addClass('datafilled');
+        container.find('.uploaded').attr('src', data.data.logos[512]);
+        container.find('.uploadedlink').attr('href', data.data.logos[512]);
+        var logos = data.data.logos;
+        for(var o in logos){
+            $('#uploadlogopanel .logos_'+o).val(logos[o]);
+        }
+        container.find('.delpicbtn').show();
+        container[0].getElementsByTagName('object')[0].style.display = 'none';//操作object不能用jQuery，否则在IE9下会报错
+
+        validObj.check(false, '#uploadedLogoInfo');
+
+        //发起logo白边检测
+        if(window.logoChecker){
+            logoChecker.hasEdge = function(){
+                $('#uploadlogopanel .Validform_checktip').addClass('Validform_warming').text('检测到图标包含白边，可能无法通过上线审核，请参考示例进行优化。');
+                try{
+                    var time = +new Date();
+                    $.ajax({
+                        url : '/mod/mstore/store',
+                        data : {k:time, v:data.data.logos[512]}
+                    });
+                }
+                catch (e){}
+            }
+            logoChecker.init(data.data.logos[512]);
+        }
+        
+    }
+    else{
+        //上传失败
+        this.uploadError(d, "c_404", data.error);
+    }
+}
+
+var uploadlogo_settings = {
+    upload_url : "",
+    flash_url : "/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf",
+    file_size_limit : "3 MB",
+    button_action: SWFUpload.BUTTON_ACTION.SELECT_FILE,
+    button_cursor: SWFUpload.CURSOR.HAND,
+    button_placeholder_id: 'uploadlogobtn',
+    custom_settings : { progressTarget : "uploadLogoProgress"},
+    button_image_url : "/resource/img/createmobile/logobtn.png",
+    button_width : 162,
+    button_height : 162,
+    button_text : '<span class="uploadtext"></span>',
+    button_text_style : '.uploadtext{font-size:14px;color:#FFFFFF;text-align:center;font-family:"微软雅黑";}',
+    button_window_mode:"transparent",
+    button_text_top_padding : 104,
+    button_text_left_padding : 0,
+    upload_success_handler: uploadLogoSuccess
+}
+$.extend(uploadlogo_settings, uploadLogoCustomSetting);
+var logoUploader = swfupload('#uploadlogopanel', uploadlogo_settings);
+
+
+
+</script>
+					</div>
+				</div>
+				<div>
+					<label class="formtag" for="applogo">应用截图：</label>
+					<div class="formoption">
+						<div class="formtip">
+							请上传4-5张截图（尺寸保持一致），支持JPG、PNG格式。截图尺寸要求：不小于800*480（480*800），单张图片不能超过3M。请去除截图中的顶部通知栏。
+							<a class="shotsample pre dib" href="javascript:void(0);">
+								<b>查看示例</b>
+								<div id="rightshot">
+									<span class="topsanjiao"></span>
+									<p>去除顶部通知栏的图标让截图更干净。</p>
+									<img src="./360xiangqing_files/rightshot.jpg" class="mt12">
+								</div>
+							</a>
+						</div>
+						<input type="text" readonly="" class="validplaceholder" id="uploadedShotsInfo" datatype="uploadshot" nullmsg="请上传4-5张应用截图" errormsg="请上传4-5张应用截图">
+<span id="shotnumvalid" class="Validform_checktip"></span>
+
+
+<div id="uploadshotspanel">
+	<div id="upshot_1" class="uploadshot uploadimg">
+		<a href="javascript:void(0);" class="delpicbtn" title="删除" style="display: inline;"></a>
+		<a class="uploadedlink" href="http://p19.qhimg.com/t01d6f4ed853f47bea9.jpg" target="_blank">
+			<img class="uploaded" data-src="../pic/img (1).png" src="../pic/img (1).png">
+		</a>
+		<object id="SWFUpload_3" type="application/x-shockwave-flash" data="http://dev.360.cn/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf" width="202" height="200" class="swfupload" style="display: none;"><param name="wmode" value="transparent"><param name="movie" value="/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf"><param name="quality" value="high"><param name="allowScriptAccess" value="always"><param name="flashvars" value="movieName=SWFUpload_3&amp;uploadURL=%2Fmod%2Fupload%2Fshots5%2F&amp;useQueryString=false&amp;requeueOnError=false&amp;httpSuccess=&amp;assumeSuccessTimeout=0&amp;params=&amp;filePostName=Filedata&amp;fileTypes=*.png%3B*.jpg%3B*.gif%3B&amp;fileTypesDescription=%E4%B8%8D%E8%B6%85%E8%BF%872M%E7%9A%84%E5%9B%BE%E7%89%87&amp;fileSizeLimit=3%20MB&amp;fileUploadLimit=3&amp;fileQueueLimit=10&amp;debugEnabled=false&amp;buttonImageURL=%2Fresource%2Fimg%2Fcreatemobile%2Fshotbtn.png&amp;buttonWidth=202&amp;buttonHeight=200&amp;buttonText=%3Cspan%20class%3D%22uploadtext%22%3E%3C%2Fspan%3E&amp;buttonTextTopPadding=138&amp;buttonTextLeftPadding=0&amp;buttonTextStyle=.uploadtext%7Bfont-size%3A14px%3Bcolor%3A%23FFFFFF%3Btext-align%3Acenter%3Bfont-family%3A%22%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91%22%3B%7D&amp;buttonAction=-100&amp;buttonDisabled=false&amp;buttonCursor=-2"></object>
+		<input type="hidden" name="app_shot1_name" class="input_name_t" value="http://p19.qhimg.com/t01d6f4ed853f47bea9.jpg">
+        <input type="hidden" name="app_shot1_key" class="input_key_t" value="http://p19.qhimg.com/t01d6f4ed853f47bea9.jpg">
+        <input type="hidden" name="app_shot1_w" class="w" value="120">
+        <input type="hidden" name="app_shot1_h" class="h" value="200">
+	</div>
+	<div id="upshot_2" class="uploadshot uploadimg">
+		<a href="javascript:void(0);" class="delpicbtn" title="删除" style="display: inline;"></a>
+		<a class="uploadedlink" href="http://p15.qhimg.com/t01e3fd343319ff9983.jpg" target="_blank">
+			<img class="uploaded" data-src="../pic/img (2).png" src="../pic/img (2).png">
+		</a>
+		<object id="SWFUpload_4" type="application/x-shockwave-flash" data="http://dev.360.cn/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf" width="202" height="200" class="swfupload" style="display: none;"><param name="wmode" value="transparent"><param name="movie" value="/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf"><param name="quality" value="high"><param name="allowScriptAccess" value="always"><param name="flashvars" value="movieName=SWFUpload_4&amp;uploadURL=%2Fmod%2Fupload%2Fshots5%2F&amp;useQueryString=false&amp;requeueOnError=false&amp;httpSuccess=&amp;assumeSuccessTimeout=0&amp;params=&amp;filePostName=Filedata&amp;fileTypes=*.png%3B*.jpg%3B*.gif%3B&amp;fileTypesDescription=%E4%B8%8D%E8%B6%85%E8%BF%872M%E7%9A%84%E5%9B%BE%E7%89%87&amp;fileSizeLimit=3%20MB&amp;fileUploadLimit=3&amp;fileQueueLimit=10&amp;debugEnabled=false&amp;buttonImageURL=%2Fresource%2Fimg%2Fcreatemobile%2Fshotbtn.png&amp;buttonWidth=202&amp;buttonHeight=200&amp;buttonText=%3Cspan%20class%3D%22uploadtext%22%3E%3C%2Fspan%3E&amp;buttonTextTopPadding=138&amp;buttonTextLeftPadding=0&amp;buttonTextStyle=.uploadtext%7Bfont-size%3A14px%3Bcolor%3A%23FFFFFF%3Btext-align%3Acenter%3Bfont-family%3A%22%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91%22%3B%7D&amp;buttonAction=-100&amp;buttonDisabled=false&amp;buttonCursor=-2"></object>
+		<input type="hidden" name="app_shot2_name" class="input_name_t" value="http://p15.qhimg.com/t01e3fd343319ff9983.jpg">
+        <input type="hidden" name="app_shot2_key" class="input_key_t" value="http://p15.qhimg.com/t01e3fd343319ff9983.jpg">
+        <input type="hidden" name="app_shot2_w" class="w" value="120">
+        <input type="hidden" name="app_shot2_h" class="h" value="200">
+	</div>
+	<div id="upshot_3" class="uploadshot uploadimg">
+		<a href="javascript:void(0);" class="delpicbtn" title="删除" style="display: inline;"></a>
+		<a class="uploadedlink" href="http://p19.qhimg.com/t0137aca1e0d265c1e7.jpg" target="_blank">
+			<img class="uploaded" data-src="../pic/img (3).png" src="../pic/img (3).png">
+		</a>
+		<object id="SWFUpload_5" type="application/x-shockwave-flash" data="http://dev.360.cn/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf" width="202" height="200" class="swfupload" style="display: none;"><param name="wmode" value="transparent"><param name="movie" value="/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf"><param name="quality" value="high"><param name="allowScriptAccess" value="always"><param name="flashvars" value="movieName=SWFUpload_5&amp;uploadURL=%2Fmod%2Fupload%2Fshots5%2F&amp;useQueryString=false&amp;requeueOnError=false&amp;httpSuccess=&amp;assumeSuccessTimeout=0&amp;params=&amp;filePostName=Filedata&amp;fileTypes=*.png%3B*.jpg%3B*.gif%3B&amp;fileTypesDescription=%E4%B8%8D%E8%B6%85%E8%BF%872M%E7%9A%84%E5%9B%BE%E7%89%87&amp;fileSizeLimit=3%20MB&amp;fileUploadLimit=3&amp;fileQueueLimit=10&amp;debugEnabled=false&amp;buttonImageURL=%2Fresource%2Fimg%2Fcreatemobile%2Fshotbtn.png&amp;buttonWidth=202&amp;buttonHeight=200&amp;buttonText=%3Cspan%20class%3D%22uploadtext%22%3E%3C%2Fspan%3E&amp;buttonTextTopPadding=138&amp;buttonTextLeftPadding=0&amp;buttonTextStyle=.uploadtext%7Bfont-size%3A14px%3Bcolor%3A%23FFFFFF%3Btext-align%3Acenter%3Bfont-family%3A%22%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91%22%3B%7D&amp;buttonAction=-100&amp;buttonDisabled=false&amp;buttonCursor=-2"></object>
+		<input type="hidden" name="app_shot3_name" class="input_name_t" value="http://p19.qhimg.com/t0137aca1e0d265c1e7.jpg">
+        <input type="hidden" name="app_shot3_key" class="input_key_t" value="http://p19.qhimg.com/t0137aca1e0d265c1e7.jpg">
+        <input type="hidden" name="app_shot3_w" class="w" value="120">
+        <input type="hidden" name="app_shot3_h" class="h" value="200">
+	</div>
+	<div id="upshot_4" class="uploadshot uploadimg">
+		<a href="javascript:void(0);" class="delpicbtn" title="删除" style="display: inline;"></a>
+		<a class="uploadedlink" href="http://p19.qhimg.com/t01c16e2e738185d94d.jpg" target="_blank">
+			<img class="uploaded" data-src="../pic/img (2).png" src="../pic/img (2).png">
+		</a>
+		<object id="SWFUpload_6" type="application/x-shockwave-flash" data="http://dev.360.cn/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf" width="202" height="200" class="swfupload" style="display: none;"><param name="wmode" value="transparent"><param name="movie" value="/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf"><param name="quality" value="high"><param name="allowScriptAccess" value="always"><param name="flashvars" value="movieName=SWFUpload_6&amp;uploadURL=%2Fmod%2Fupload%2Fshots5%2F&amp;useQueryString=false&amp;requeueOnError=false&amp;httpSuccess=&amp;assumeSuccessTimeout=0&amp;params=&amp;filePostName=Filedata&amp;fileTypes=*.png%3B*.jpg%3B*.gif%3B&amp;fileTypesDescription=%E4%B8%8D%E8%B6%85%E8%BF%872M%E7%9A%84%E5%9B%BE%E7%89%87&amp;fileSizeLimit=3%20MB&amp;fileUploadLimit=3&amp;fileQueueLimit=10&amp;debugEnabled=false&amp;buttonImageURL=%2Fresource%2Fimg%2Fcreatemobile%2Fshotbtn.png&amp;buttonWidth=202&amp;buttonHeight=200&amp;buttonText=%3Cspan%20class%3D%22uploadtext%22%3E%3C%2Fspan%3E&amp;buttonTextTopPadding=138&amp;buttonTextLeftPadding=0&amp;buttonTextStyle=.uploadtext%7Bfont-size%3A14px%3Bcolor%3A%23FFFFFF%3Btext-align%3Acenter%3Bfont-family%3A%22%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91%22%3B%7D&amp;buttonAction=-100&amp;buttonDisabled=false&amp;buttonCursor=-2"></object>
+		<input type="hidden" name="app_shot4_name" class="input_name_t" value="http://p19.qhimg.com/t01c16e2e738185d94d.jpg">
+        <input type="hidden" name="app_shot4_key" class="input_key_t" value="http://p19.qhimg.com/t01c16e2e738185d94d.jpg">
+        <input type="hidden" name="app_shot4_w" class="w" value="120">
+        <input type="hidden" name="app_shot4_h" class="h" value="200">
+	</div>
+	<div id="upshot_5" class="uploadshot uploadimg unfilled">
+		<a href="javascript:void(0);" class="delpicbtn" title="删除" style="display: none;"></a>
+		<a class="uploadedlink" href="http://p17.qhimg.com/t0143216d88282d1958.jpg" target="_blank">
+			<img class="uploaded" data-src="../pic/img (2).png" src="../pic/img (2).png">
+		</a>
+		<object id="SWFUpload_7" type="application/x-shockwave-flash" data="http://dev.360.cn/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf" width="202" height="200" class="swfupload"><param name="wmode" value="transparent"><param name="movie" value="/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf"><param name="quality" value="high"><param name="allowScriptAccess" value="always"><param name="flashvars" value="movieName=SWFUpload_7&amp;uploadURL=%2Fmod%2Fupload%2Fshots5%2F&amp;useQueryString=false&amp;requeueOnError=false&amp;httpSuccess=&amp;assumeSuccessTimeout=0&amp;params=&amp;filePostName=Filedata&amp;fileTypes=*.png%3B*.jpg%3B*.gif%3B&amp;fileTypesDescription=%E4%B8%8D%E8%B6%85%E8%BF%872M%E7%9A%84%E5%9B%BE%E7%89%87&amp;fileSizeLimit=3%20MB&amp;fileUploadLimit=3&amp;fileQueueLimit=10&amp;debugEnabled=false&amp;buttonImageURL=%2Fresource%2Fimg%2Fcreatemobile%2Fshotbtn.png&amp;buttonWidth=202&amp;buttonHeight=200&amp;buttonText=%3Cspan%20class%3D%22uploadtext%22%3E%3C%2Fspan%3E&amp;buttonTextTopPadding=138&amp;buttonTextLeftPadding=0&amp;buttonTextStyle=.uploadtext%7Bfont-size%3A14px%3Bcolor%3A%23FFFFFF%3Btext-align%3Acenter%3Bfont-family%3A%22%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91%22%3B%7D&amp;buttonAction=-100&amp;buttonDisabled=false&amp;buttonCursor=-2"></object>
+		<input type="hidden" name="app_shot5_name" class="input_name_t" value="">
+        <input type="hidden" name="app_shot5_key" class="input_key_t" value="">
+        <input type="hidden" name="app_shot5_w" class="w" value="">
+        <input type="hidden" name="app_shot5_h" class="h" value="">
+	</div>
+	<div id="shotsUploadProgress_1" class="uploadshotprogress"></div>
+	<div id="shotsUploadProgress_2" class="uploadshotprogress"></div>
+	<div id="shotsUploadProgress_3" class="uploadshotprogress"></div>
+	<div id="shotsUploadProgress_4" class="uploadshotprogress"></div>
+	<div id="shotsUploadProgress_5" class="uploadshotprogress"></div>
+</div>
+<script type="text/javascript">
+//获取图片缩略图
+function getThumb(url, w, h){
+	var formater = '.com\/dr\/_200_/'; //默认高度为200
+    if(typeof w != 'undefined' && typeof h != 'undefined'){
+		if(w > h){
+	    	formater = '.com\/dr\/200__/';
+	    }	
+	}
+    return url.replace(/.com\//, formater);
+}
+
+$('.uploadshot').each(function(index, element){
+	//初始化图片
+	var img = $(element).find('.uploaded');
+	var thumb = getThumb(img.data('src'));
+	img.attr('src', thumb);
+
+	var i = index + 1;
+	var uploadshots_settings = {
+	    upload_url : "",
+	    flash_url : "/resource/module/swfupload/2.5.0/swfupload2.5.fix.swf",
+	    file_size_limit : "3 MB",
+	    button_action: SWFUpload.BUTTON_ACTION.SELECT_FILE,
+	    button_cursor: SWFUpload.CURSOR.HAND,
+	    button_placeholder_id: 'uploadshotbtn_'+i,
+	    custom_settings : { progressTarget : "shotsUploadProgress_"+i},
+	    button_image_url : "/resource/img/createmobile/shotbtn.png",
+	    button_width : 202,
+	    button_height : 200,
+	    button_text : '<span class="uploadtext"></span>',
+	    button_text_style : '.uploadtext{font-size:14px;color:#FFFFFF;text-align:center;font-family:"微软雅黑";}',
+	    button_window_mode:"transparent",
+	    button_text_top_padding : 138,
+	    button_text_left_padding : 0,
+	    upload_success_handler: function(d, b, e){
+	    	var data = $.parseJSON(b);
+		    if (data.errno == '0') {
+		        var num = parseInt($('#uploadedShotsInfo').val()) || 0;
+		    	$('#uploadedShotsInfo').val(num + 1);
+		        var a = new FileProgress(d, this.customSettings.progressTarget);
+		        a.setComplete();
+
+		        a.setStatus("上传文件成功");//上传文件成功
+		        a.toggleCancel(false);
+
+		        var container = $('#upshot_'+i);
+		        container.removeClass('unfilled').addClass('datafilled');
+		        //将图片切成缩略图来回显
+		        var cutedUrl = getThumb(data.data.url, data.data.w, data.data.h);
+		        container.find('.uploaded').attr('src', cutedUrl);
+		        container.find('.uploadedlink').attr('href', data.data.url);
+		        $('#upshot_'+i).find('.input_key_t').val(data.data.url);
+		        $('#upshot_'+i).find('.w').val(data.data.w);
+		        $('#upshot_'+i).find('.h').val(data.data.h);
+
+		        container.find('.delpicbtn').show();
+		        container[0].getElementsByTagName('object')[0].style.display = 'none';//操作object不能用jQuery，否则在IE9下会报错
+
+		        if(num >= 3){
+		        	$('#shotnumvalid').removeClass('Validform_wrong Validform_right').html('');
+		        	validObj.check(false, '#uploadedShotsInfo');
+		        }
+		        
+
+		    }
+		    else{
+		        //上传失败
+		        this.uploadError(d, "c_404", data.error);
+		    }
+	    }
+	}
+	$.extend(uploadshots_settings, uploadShotsCustomSetting);
+	swfupload('#uploadlogopanel', uploadshots_settings);
+});
+
+
+</script>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="formpanel">
+			<div class="formtitle">
+				<h2>审核与发布设置</h2>
+			</div>
+			<div class="formcontent">
+				<div>
+					<label class="formtag" for="apk_desc">审核辅助说明（选填）：</label>
+					<div class="formoption">
+						<textarea id="apk_desc" name="apk_desc" datatype="*0-400" errormsg="字数不能超过400"></textarea>
+					    <span class="Validform_checktip"></span><div class="lt_info formtip">还可以输入<b style="color:green;">400</b>字</div>	
+						<p class="formtip">
+							1. 是否有哪些特殊机型或CPU等要求。<br>
+							2. 如修改了包的签名，需在此填写修改签名原因。<br>
+							3. 如上次提交审核未通过，则需在此填写备注信息，帮助审核通过。<br>
+							4. 游戏、应用的测试账号、密码也可以在这里填写。<br>
+							5. 最多不超过400字。
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<label class="formtag">发布时间：</label>
+					<div class="formoption lh36">
+						<input type="radio" name="timed_pub" value="0" id="checkpub"><label for="checkpub" class="ml5">审核后立即发布</label>
+						<input type="radio" name="timed_pub" value="1" id="settimepub" class="ml36"><label for="settimepub" class="ml5">定时发布</label>
+						<span class="pubtimepanel dn" style="display: none;">
+							，设置为
+							<select id="timed_pub_day" name="timed_pub_day">
+									                                 <option value="2015-04-01">4月1日</option>
+	                                	                                 <option value="2015-04-02">4月2日</option>
+	                                	                                 <option value="2015-04-03">4月3日</option>
+	                                	                                 <option value="2015-04-04">4月4日</option>
+	                                	                                 <option value="2015-04-05">4月5日</option>
+	                                							</select>
+							<select id="timed_pub_hour" name="timed_pub_hour">
+									                                 <option value="00">0:00-1:00</option>
+	                                	                                 <option value="01">1:00-2:00</option>
+	                                	                                 <option value="02">2:00-3:00</option>
+	                                	                                 <option value="03">3:00-4:00</option>
+	                                	                                 <option value="04">4:00-5:00</option>
+	                                	                                 <option value="05">5:00-6:00</option>
+	                                	                                 <option value="06">6:00-7:00</option>
+	                                	                                 <option value="07">7:00-8:00</option>
+	                                	                                 <option value="08">8:00-9:00</option>
+	                                	                                 <option value="09">9:00-10:00</option>
+	                                	                                 <option value="10">10:00-11:00</option>
+	                                	                                 <option value="11">11:00-12:00</option>
+	                                	                                 <option value="12">12:00-13:00</option>
+	                                	                                 <option value="13">13:00-14:00</option>
+	                                	                                 <option value="14">14:00-15:00</option>
+	                                	                                 <option value="15">15:00-16:00</option>
+	                                	                                 <option value="16">16:00-17:00</option>
+	                                	                                 <option value="17">17:00-18:00</option>
+	                                	                                 <option value="18">18:00-19:00</option>
+	                                	                                 <option value="19">19:00-20:00</option>
+	                                	                                 <option value="20">20:00-21:00</option>
+	                                	                                 <option value="21">21:00-22:00</option>
+	                                	                                 <option value="22">22:00-23:00</option>
+	                                	                                 <option value="23">23:00-24:00</option>
+	                                							</select>
+							发布上线
+						</span>
+					</div>
+				</div>
+
+								<div>
+					<label class="formtag">是否控量：</label>
+					<div class="formoption lh36">
+						<label for="is_contr_vol_y"><input id="is_contr_vol_y" type="radio" name="is_contr_vol" value="y"> 是</label>
+	    <label for="is_contr_vol_n" class="ml36"><input id="is_contr_vol_n" type="radio" name="is_contr_vol" value="n" checked=""> 否<br></label>
+	    				<div id="contr_time" class="dn">
+	    					<label for="start_end_time">时间：</label>
+	    					<input type="text" id="start_time" name="start_time" class="inputText3 js-input-start_time" value="1970-01-01 08:00">
+			                &nbsp; 至 &nbsp; 
+			                <input type="text" id="end_time" name="end_time" value="1970-01-01 08:00" class="inputText3 js-input-end_time"><br>
+	    					<label for="contr_level">发布比例：</label>
+	    					<input type="text" id="contr_level" name="contr_level" value="0" datatype="num100" nullmsg="请填写控量等级" errormsg="请填写0-100之间的整数，数字越大，发布比例越高。">%
+	    					<span class="Validform_checktip mt12"></span>
+	    					<p class="formtip ml80">0-100之间的整数</p>
+	    					<input type="checkbox" id="contro_protocol" name="contro_protocol" checked="true" class="protocol ml80">我已阅读并同意<a href="http://wiki.dev.app.360.cn/index.php?title=%E6%8E%A7%E9%87%8F%E5%8D%87%E7%BA%A7%E6%9C%8D%E5%8A%A1%E6%9D%A1%E6%AC%BE" target="_blank">控量服务条款</a>
+	    				</div>
+					</div>
+				</div>
+							</div>
+		</div>
+		<div class="submitpanel">
+			<a id="submitform" href="javascript:void(0);" class="commonbtn">提交审核</a>
+		</div>
+	</form>
+	
+
+</div>
+<script src="./360xiangqing_files/create.js"></script>
+<script>
+canUpCate = 'y';//标记是否允许修改分类
+initCateDataChange = false;//标记分类select的change是否来自于数据初始化
+var for_free = '2';//更新时的资费类型。
+$(function(){
+	mapp.createmobile.initCreatePage('soft');
+	//初始化搜索TAG
+	var searchTags = {"\u7cfb\u7edf\u5b89\u5168":["\u8f93\u5165\u6cd5","\u7701\u7535","\u6e05\u7406","\u7535\u6c60","\u4f18\u5316","\u5185\u5b58","\u5b57\u4f53","office","wifi","\u6587\u4ef6","\u6388\u6743","\u7ba1\u7406","\u6d41\u91cf","\u622a\u5c4f","\u5378\u8f7d","\u622a\u56fe","\u76d1\u63a7","\u6062\u590d"],"\u901a\u8baf\u793e\u4ea4":["\u5fae\u4fe1\u8868\u60c5","QQ\u8868\u60c5","\u5fae\u535a\u8868\u60c5","\u8fde\u6211\u8868\u60c5","\u901a\u8baf\u5f55","\u5f55\u97f3","\u6765\u7535","\u62e8\u53f7","\u7535\u8bdd","\u53f7\u7801","\u77ed\u4fe1"],"\u5f71\u97f3\u89c6\u542c":["\u64ad\u653e\u5668","\u89c6\u9891","\u5f71\u97f3","\u5f71\u89c6","\u7535\u5f71","\u7535\u89c6\u5267","\u76f4\u64ad","\u97f3\u4e50","\u94c3\u58f0","\u76f8\u673a","\u7f8e\u5316","\u56fe\u7247"],"\u65b0\u95fb\u9605\u8bfb":["\u9605\u8bfb","\u5c0f\u8bf4","\u5b66\u4e60","\u542c\u4e66","\u770b\u4e66","\u8bfb\u4e66","\u9605\u8bfb\u5668","\u7ffb\u8bd1","\u65b0\u95fb","\u8bcd\u5178","\u82f1\u8bed","\u97e9\u8bed","\u9ad8\u8003","\u9a7e\u8003","\u4f1a\u8ba1","\u6f2b\u753b"],"\u751f\u6d3b\u4f11\u95f2":["\u65e5\u5386","\u65f6\u949f","\u5929\u6c14","\u4e07\u5e74\u5386","\u519c\u5386","\u9ec4\u5386","\u6307\u5357\u9488","\u5bfc\u822a","GPS","\u8bed\u97f3","\u5730\u56fe","\u706b\u8f66\u7968","\u83dc\u8c31","\u661f\u5ea7","\u516c\u4ea4","\u8ba1\u7b97\u5668","\u4e8c\u7ef4\u7801","\u626b\u63cf","\u624b\u7535\u7b52"],"\u4e3b\u9898\u58c1\u7eb8":["\u684c\u9762","\u4e3b\u9898","\u7f8e\u5316","\u542f\u52a8\u5668","\u76ae\u80a4","\u58c1\u7eb8","\u52a8\u6001\u58c1\u7eb8","\u89e3\u9501"],"\u529e\u516c\u5546\u52a1":["office","\u90ae\u7bb1","\u4fbf\u7b7e","\u7b14\u8bb0","\u94f6\u884c","\u7406\u8d22"],"\u513f\u7ae5\u4eb2\u5b50":[],"\u6444\u5f71\u6444\u50cf":[],"\u8d2d\u7269\u4f18\u60e0":[],"\u5730\u56fe\u65c5\u6e38":[],"\u6559\u80b2\u5b66\u4e60":[],"\u91d1\u878d\u7406\u8d22":[],"\u5065\u5eb7\u533b\u7597":[],"\u4f11\u95f2\u76ca\u667a":[],"\u97f3\u4e50\u6e38\u620f":[],"\u98de\u884c\u5c04\u51fb":[],"\u5854\u9632\u7b56\u7565":[],"\u6a21\u62df\u7ecf\u8425":[],"\u89d2\u8272\u626e\u6f14":[],"\u52a8\u4f5c\u5192\u9669":[],"\u5bf9\u6218\u683c\u6597":[],"\u4f53\u80b2\u8fd0\u52a8":[],"\u8d5b\u8f66\u7ade\u901f":[],"\u68cb\u724c\u684c\u6e38":[],"\u624b\u673a\u7f51\u6e38":[],"\u8f85\u52a9\u5de5\u5177":[]};
+	function updateST(sTags) {
+		var i;
+		var html = '';
+		for(i in sTags) {
+			html += '<label><input type="checkbox" name="search_tags[]"  value="'+sTags[i]+'" /> '+sTags[i]+'</label> ';
+		}
+		$('.pool').html(html).kxCheckbox({'tagsContainer': '.pool-checked', max:3});
+	}
+	$(function(){
+		$('.pool').kxCheckbox({'tagsContainer': '.pool-checked', max:3, disabled:false});
+		
+		
+		$('#for_cate').change(function(){
+			updateST([]);
+			$('.catetag select:first').change(function(){
+				updateST(searchTags[this.options[this.selectedIndex].text]);
+			});
+		});
+		
+		$('.catetag select:first').change(function(){
+			updateST(searchTags[this.options[this.selectedIndex].text]);
+		});
+		
+		$('#tag_s').bind('change', function(){
+			if(/^[\u4E00-\u9FA5]{0,6}$/.test($(this).val())) {
+				$('.js-tip-tag_s').hide();
+			} else {
+				$('.js-tip-tag_s').html('<i></i>请输入6个以内的汉字').addClass('errorTipUp cur').show();//hide();
+			}
+		});
+
+		//Util.getTag('/createmobile/tagapi',2);
+		var key = '{"1131":1217,"1217":1293}';
+		if(key != '') {
+		    var selectkey = eval('(' + key + ')');
+		    for ( var key in selectkey) {
+		        $('#'+key).children('option[value$=' + selectkey[key] + ']').attr('selected', true);
+		        initCateDataChange = true; //标记分类select的change是来自于数据初始化
+		        $('#'+key).change();
+		        initCateDataChange = false;
+		        if($('#'+key).length == 0) {
+		            $('[node-type=level3]').children('option').filter('[value$=' + selectkey[key] +']').attr('selected', true);
+		        }   
+		    }
+		}
+
+		//初始化发布时间
+				$('#checkpub').prop('checked', true);
+		$('.pubtimepanel').hide();
+		
+	});
+
+	mapp.createmobile.initListeners();
+});
+
+</script>
+<div class="footer" id="footer" name="footer">
+    <div class="contentpanel" style="width:998px;">
+        <img src="./360xiangqing_files/footer.jpg" alt="网站信息" width="100%">
+        <p class="footp">
+            <a href="http://www.miitbeian.gov.cn/">京ICP证080047号[京ICP备08010314号-6]</a>
+            <a href="http://www.360.cn/licence1.html">文网文[2009]024号</a>
+            <a href="http://www.360.cn/licence2.html">新出网证（京）字069号</a>
+            京公网安备110000000006号
+            <a href="http://www.360.cn/gongshangyingyezhizhao.html">工商营业执照</a>
+        </p>
+    </div>
+</div>
+</div>
+<!--统计代码-->
+<script type="text/javascript" src="./360xiangqing_files/445ca40a.js"></script>
+<script type="text/javascript">
+if(location.hostname == 'dev.360.cn'){
+    monitor.setProject('360_dev').getTrack().getClickAndKeydown();
+}
+</script>
+<script type="text/javascript" src="./360xiangqing_files/util(2).js"></script>
+<script type="text/javascript" src="./360xiangqing_files/common.js"></script>
+
+
+<div class="pb_container" style="display: none;"><div class="pb_mask"></div><div class="pb_panel" style="width: 400px; margin-top: -63px; margin-left: -200px;"><div class="pb_header" style="cursor: move;"><h2 class="pb_title">温馨提示</h2><a href="javascript:void(0);" class="pb_closebtn"></a></div><div class="pb_body" style="max-height: 500px; padding: 20px;"><div style="text-align:center;margin-top:20px;font-size:16px;">确定删除该图片吗？</div></div><div class="pb_btns"><a href="javascript:void(0);" class="pb_bluebtn">确定</a><a href="javascript:void(0);" class="pb_graybtn">取消</a></div><div class="pb_footer"></div></div></div></body></html>

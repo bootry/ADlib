@@ -1,0 +1,249 @@
+.createpanel{
+	margin: 100px auto;
+	text-align: center;
+	/*overflow: hidden;*/
+	width: 800px;
+}
+.createpanel .createitem{
+	float: left;
+	margin: 20px;
+	vertical-align: top;
+	width: 360px;
+}
+.createpanel .createitem .commontip{
+	left: 50%;
+	margin-left: -124px;
+	top: -48px;
+	width: 156px;
+	line-height: 6px;
+	display: none;
+}
+.createbtn.disabled:hover .commontip{
+	display: inline-block;
+}
+.createpanel .createbtn:link, .createpanel .createbtn:visited{
+	display: inline-block;
+	width: 300px;
+	padding: 8px 0;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 600;
+	color: #FFF;
+	background: #2C9445;
+}
+.createpanel .createbtn:hover{
+	background: #40A558;
+}
+.createpanel .createbtn:active{
+	background: #2C9445;
+}
+.createbtn.disabled{
+	background-color: #BFBFBF !important;
+	color: #f5f5f5 !important;
+}
+.toptitle{
+	text-align: center;
+	color: #333;
+	font-size: 24px;
+	margin-top: 54px;
+}
+.bigtip{
+	width: 300px;
+	display: inline-block;
+	text-align: left;
+	color: #999;
+}
+.noborder{
+	border: 1px solid transparent !important;
+}
+#contractform select{
+	width: 139px;
+}
+.pagetitletip{
+	position: relative;
+	top: -30px;
+}
+.whitepanel{
+	background: #FFF;
+	border: 1px solid #E6E6E6;
+	margin-bottom: 22px;
+	padding: 24px 50px;
+	overflow: hidden;
+	position: relative;
+}
+.subtitle{
+	font-size: 18px;
+	color: #2c9445;
+}
+#sdkform .whitepanel{
+	overflow: hidden;
+	position: relative;
+}
+#sdkform .whitepanel p{
+	line-height: 32px;
+}
+#sdkform .leftpanel{
+	width: 600px;
+	float: left;
+}
+#sdkform .rightpanel{
+	width: 150px;
+	min-height: 90px;
+	float: right;
+	position: relative;
+	text-align: center;
+}
+#sdkform .roundbtn{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -21px;	
+}
+#sdkform .rightpanel .status{
+	line-height: 90px;
+	color: #2c9445;
+	font-size: 20px;
+
+}
+#sdkform .lefttag{
+	display: inline-block;
+	width: 90px;
+}
+#sdkform .rightpanel .formtip{
+	position: relative;
+	top: 64px;
+	white-space: nowrap;
+}
+#netgameform input[name="name"], #netgameform input[name="name_ext"]{
+	width: 240px;
+}
+#netgameform .nameexttip{
+	margin-left: 28px;
+}
+#modifyname{
+	/* visibility: hidden; */
+}
+#paishengform .formcontent{
+	padding: 0 50px 50px;
+}
+#paishengform h3{
+	margin-top: 30px;
+	margin-bottom: 8px;
+	color: #333;
+	font-size: 16px;
+}
+#paishengform p{
+	font-size: 12px;
+	font-family: '宋体';
+	line-height: 28px;
+}
+#sendbackpro{
+	position: absolute;
+	width: 980px;
+	border: 1px solid #E6E6E6;
+	background-color: #FFF;
+	padding: 10px;	
+}
+.softicon, .ebookicon, .proapp, .proapps{
+	display: inline-block;
+	vertical-align: top;
+	width: 54px;
+	height: 54px;
+	margin-right: 8px;
+	background-repeat: no-repeat;
+}
+.softicon{
+	background-image: url(/resource/img/createmobile/soft.png);
+}
+.ebookicon{
+	background-image: url(/resource/img/createmobile/ebook.png);
+}
+.proapp{
+	background-image: url(/resource/img/proapp.png);
+}
+.proapps{
+	background-image: url(/resource/img/proapps.png);
+}
+.createbtn.disabled .proapps{
+	background-image: url(/resource/img/proapps-dis.png);	
+}
+
+#contr_time input[type="text"]{
+	width: 160px;
+	margin-top: 10px;
+	vertical-align: top;
+}
+#contr_time label {
+	margin-top: 10px;
+}
+.failinfo{
+	cursor: pointer;
+}
+.failinfo:hover .failinfotext{
+	display: block;
+}
+.failinfotext{
+	position: absolute;
+	width: 278px;
+	height: 105px;
+	background-color: #9B999A;
+	border-radius: 12px;
+	padding: 10px 20px;
+	z-index: 100;
+	left: 72px;
+	top: -22px;
+	color: #FFF;
+	font-size: 14px;
+	display: none;
+}
+.failinfotext .leftsanjiao{
+	top: 19px;
+}
+#userguide > div{
+	padding: 10px 80px;
+}
+#userguide h2{
+	font-weight: bold;
+	font-size: 16px;
+}
+.guidepanel{
+	border: 1px solid #D9D9D9;
+	border-radius: 8px;
+	padding: 20px 20px;
+	margin-top: 12px;
+	line-height: 2em;
+}
+.guidepanel .greentext{
+	margin-left: 15px;
+}
+.g_icon{
+	display: inline-block;
+	width: 100px;
+	height: 140px;
+	float: left;
+	margin-right: 20px;
+}
+.g_title{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#exchange .g_icon{
+	background: url(http://p3.qhimg.com/t01c428b15b5c8b7ba7.png) top center no-repeat;
+}
+#shoufa .g_icon{
+	background: url(http://p1.qhimg.com/t014338e2b622bb0f73.png) top center no-repeat;
+}
+#tequan .g_icon{
+	background: url(http://p4.qhimg.com/t01968d406f861a8ec9.png) top center no-repeat;
+}
+
+#sdkform .whitepanel .appicon{
+	width: 128px;
+	height: 128px;
+	margin-right: 10px;
+}

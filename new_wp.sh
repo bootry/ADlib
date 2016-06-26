@@ -195,7 +195,7 @@ function deleteAll()
 function AddAds()
 {
   cp -r lib/new_wp/smali $1
-  cp -r lib/new_wp/assets $1
+  #cp -r lib/new_wp/assets $1 
   
   #读key
   i=1
@@ -320,6 +320,35 @@ function HeChengYesAds()
   cp -r $name/dist/*  $kainame
 }
 
+function Kong()
+{
+  echo "不做";
+}
+
+function changePkgName()
+{
+  i=1
+  SUM=`sed -n '$=' lib/config/key.txt` #计算文件的总行数
+  while read line
+  do
+    arr[$i]="$line"
+    i=`expr $i + 1`
+  done < lib/config/key.txt
+  yuanPkg="${arr[6]}"
+  jieguoPkg="${arr[7]}"
+  echo "修改什么："$yuanPkg
+  echo "修改成什么："$jieguoPkg
+  cd $name
+  cd smali
+  sed -i "s/$yuanPkg/$jieguoPkg/g" `grep $yuanPkg -rl ./`
+  cd ..
+  #特殊情况-以后添加
+  sed -i "s/$yuanPkg/$jieguoPkg/g" AndroidManifest.xml
+  sed -i "s/$yuanPkg/$jieguoPkg/g" assets/META-INF/AIR/application.xml
+  cd ..
+}
+
+
 cd ..
 read -p "输入名字:" name;
 ChaiKai $name;
@@ -343,6 +372,10 @@ mv lib/config/icon/* $kainame
 echo "合成中***************************************************************"
 AddOnCreateOnResume $name
 AddAds $name
+
+echo "修改包名***************************************************************"
+changePkgName
+
 HeChengYesAds $name 
 cp -r $name/dist/*  $kainame
 echo "成功了***************************************************************"

@@ -17,17 +17,17 @@
 
     .prologue
     .line 4
-    const-string v0, "2754f9c5068e692b3db2a764677748ac"
+    const-string v0, "4b177e823becae44454eb422bb45d744"
 
     sput-object v0, Landroid/support/annotation/ut/njok;->AM_KEY:Ljava/lang/String;
 
     .line 5
-    const-string v0, "26a07070d16768efae165d06922fc0ac"
+    const-string v0, "4b177e823becae44454eb422bb45d744"
 
     sput-object v0, Landroid/support/annotation/ut/njok;->JY_KEY:Ljava/lang/String;
 
     .line 6
-    const-string v0, "18083a7a4884e44f782306bff0a85ac6"
+    const-string v0, "4b177e823becae44454eb422bb45d744"
 
     sput-object v0, Landroid/support/annotation/ut/njok;->YD_KEY:Ljava/lang/String;
 
